@@ -23,7 +23,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    #@article = article.find(params[:id])
+    @article = article.find(params[:id])
   end
 
   private
