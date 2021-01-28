@@ -1,0 +1,13 @@
+<div>
+  <%= form_with model: @user, class: 'form' do |f| %>
+    <div>
+      <%= f.label :name, class: "label | text-is-white" %>
+      <%= f.text_field :name, class: "input" %>
+    </div>
+    <div>
+      <%= f.label :username, class: "label | text-is-white" %>
+      <%= f.text_field :username, class: "input" %>
+    </div>
+    <%= f.submit%>
+  <% end %>
+</div>

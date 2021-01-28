@@ -1,0 +1,12 @@
+<h1>
+<%=user_signed_in?%>
+</h1>
+<div>
+  <%= form_tag sign_in_path, class: 'form' do |f| %>
+    <div>
+      <%= label_tag :username, nil, class: "label | text-is-white" %>
+      <%= text_field_tag :username, nil, class: "input" %>
+    </div>
+    <%= submit_tag 'log in', class: "form__button | text-is-white" %>
+  <% end %>
+</div>
