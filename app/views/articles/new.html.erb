@@ -1,0 +1,14 @@
+<h1>Article</h1>
+<div>
+  <%= form_with model: @article, class: 'form' do |f| %>
+    <div>
+      <%= f.label :title, class: "label | text-is-white" %>
+      <%= f.text_field :title, class: "input" %>
+    </div>
+    <div>
+      <%= f.label :content, class: "label | text-is-white" %>
+      <%= f.text_area :content, class: "input" %>
+    </div>
+    <%= f.submit%>
+  <% end %>
+</div>
