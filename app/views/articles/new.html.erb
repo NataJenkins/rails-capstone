@@ -9,6 +9,10 @@
       <%= f.label :content, class: "label | text-is-white" %>
       <%= f.text_area :content, class: "input" %>
     </div>
-    <%= f.submit%>
+  <div>
+    <%= f.label :category%>
+    <%= select_tag :categories, options_for_select(@categories), class: 'input' %>
+  </div>
+  <%= f.submit%>
   <% end %>
 </div>
