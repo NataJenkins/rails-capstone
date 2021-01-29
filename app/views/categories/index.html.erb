@@ -1,2 +1,13 @@
-<h1>Categories#index</h1>
-<p>Find me in app/views/categories/index.html.erb</p>
+<div>
+  <%= form_with model: @category, class: 'form' do |f| %>
+    <div>
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'input' %>
+    </div>
+    <div>
+      <%= f.label :priority %>
+      <%= f.select :priority, [1, 2, 3, 4, 5], class: 'input' %>
+    </div>
+    <%= f.submit %>
+  <% end %>
+</div>
