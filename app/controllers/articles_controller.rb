@@ -19,11 +19,17 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
-    
+    @article = Article.find(params[:id])
+    if @article.destroy
+      flash[:success] = 'Article was successfully deleted.'
+    else 
+      flash[:error] = "error"
+      redirect_to root_url
+    end
   end
 
   def show
-    @article = article.find(params[:id])
+    @article = Article.find(params[:id])
   end
 
   private
