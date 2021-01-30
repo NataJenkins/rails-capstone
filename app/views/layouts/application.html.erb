@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>RailsCapstone</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <title>RailsCapstone</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-  <body>
-    <%= yield %>
-  </body>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <script src="https://kit.fontawesome.com/7bc3c221d9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="nav-cat">
+      <%= link_to 'Gun'%>
+      <%= link_to 'Toy'%>
+      <%= link_to 'Utility'%>
+      <%= link_to 'Hound'%>
+      <%= link_to 'Terrier'%>
+      <%= link_to 'Working'%>
+      <%= link_to 'Pastoral'%>
+    </div>
+    <div class="nav-sess">
+      <%= link_to 'Log in', sign_in_path %>
+      <%= link_to 'Register', new_user_path %>
+    </div>
+
+  </div>
+  <%= yield %>
+
+  <footer>
+  <div class="created">
+  <p>Created by Natalia</p>
+  </div>
+  <div class="contact">
+  <p>Contact Me</p>
+  <a><i class="fab fa-github"></i></a>
+  <a><i class="fab fa-linkedin"></i></a>
+  <a><i class="fab fa-instagram"></i></a>
+  </div>
+  </footer>
+</body>
+
 </html>
