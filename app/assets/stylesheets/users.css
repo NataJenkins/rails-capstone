@@ -1,0 +1,20 @@
+.container{
+    margin: auto;
+    margin-top:100px;
+    width:300px;
+    height: 200px;
+    overflow: auto;
+}
+
+.field{
+    display: flex;
+    justify-content:space-between;
+    margin-top:20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btn{
+    margin-top: 30px;
+    text-align: center;
+}
