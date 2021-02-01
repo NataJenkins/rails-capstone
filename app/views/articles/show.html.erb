@@ -3,6 +3,9 @@
 <%= @article.title %>
 </h1>
 <div>
+<%= @article.avatar.attached?%>
+</div>
+<div>
 <%= @article.content %>
 </div>
 <%= link_to 'destroy', article_path(@article.id), method: :delete %>

@@ -13,7 +13,10 @@
     <%= f.label :category%>
     <%= select_tag :categories, options_for_select(@categories), class: 'input' %>
   </div>
-  <%= form.file_field :avatar %>
-  <%= f.submit%>
+  <div>
+  <%= f.label :image %>
+  <%= f.file_field :content, class: "input" %>
+  </div>
+  <%= f.submit %>
   <% end %>
 </div>
