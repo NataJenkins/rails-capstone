@@ -10,4 +10,7 @@ class ApplicationController < ActionController::Base
       !current_user.nil?
     end
   
+    def cat_show 
+      @categories = Category.all.map{|c| [c.name, c.id]}
+    end
 end
