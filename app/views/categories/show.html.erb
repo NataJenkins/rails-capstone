@@ -1,24 +1,21 @@
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
-<div class="art-container">
-    <div class="top-container">
-        <div class="main-article">
-            main
+<div class="card-container">
+  <% @articles.each do |art| %>
+    <article class="card">
+      <%= image_tag(url_for(display_image(art)), class: 'card__image') %>
+      <div class="card__info">
+        <h2 class="cat-name">
+          <%= @category.name%>
+        </h2>
+        <div class="art-title">
+          <%= art.title %>
         </div>
-        <div class="right-articles">
-            <div class="article">
-                a
-            </div>
-            <div class="article">
-            </div>
+        <div>
+          <p class="art-content">
+            <%= truncated_card_content(art.content) %>
+          </p>
+            <%= link_to 'Read more', article_path(art.id), class: 'card__read-more' %>
         </div>
-    </div>
-    <div class="bot-container">
-        <div class="article">
-        </div>
-        <div class="article">
-        </div>
-        <div class="article">
-        </div>
-    </div>
+      </div>
+    </article>
+  <% end %>
 </div>

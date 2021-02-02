@@ -15,13 +15,7 @@
 <body>
   <div class="nav">
     <div class="nav-cat">
-      <%= link_to 'Gun'%>
-      <%= link_to 'Toy'%>
-      <%= link_to 'Utility'%>
-      <%= link_to 'Hound'%>
-      <%= link_to 'Terrier'%>
-      <%= link_to 'Working'%>
-      <%= link_to 'Pastoral'%>
+      <%= link_to 'New Category', new_category_path%>
       <%= link_to 'New Article', new_article_path%>
     </div>
     <div class="nav-sess">
@@ -33,15 +27,15 @@
   <%= yield %>
 
   <footer>
-  <div class="created">
-  <p>Created by Natalia</p>
-  </div>
-  <div class="contact">
-  <p>Contact Me</p>
-  <a><i class="fab fa-github"></i></a>
-  <a><i class="fab fa-linkedin"></i></a>
-  <a><i class="fab fa-instagram"></i></a>
-  </div>
+    <div class="created">
+      <p>Created by Natalia</p>
+    </div>
+    <div class="contact">
+      <p>Contact Me</p>
+      <a><i class="fab fa-github"></i></a>
+      <a><i class="fab fa-linkedin"></i></a>
+      <a><i class="fab fa-instagram"></i></a>
+    </div>
   </footer>
 </body>
 
