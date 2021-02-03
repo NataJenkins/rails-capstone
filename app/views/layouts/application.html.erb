@@ -20,7 +20,7 @@
       <div class="dropdown">
         categories
         <div class="dropdown-content">
-          <% @categories.each do |c| %>
+          <% cat_drop.each do |c| %>
           <%= link_to "#{c.name}", category_path(c) %>
           <% end %>
         </div>

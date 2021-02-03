@@ -13,4 +13,10 @@ class ApplicationController < ActionController::Base
     def cat_show 
       @categories = Category.all.map{|c| [c.name, c.id]}
     end
+
+    private
+
+    def category_params
+      params.require(:category).permit(:name, :priority)
+    end
 end
