@@ -1,21 +1,18 @@
-<div class="card-container">
-  <% @articles.each do |art| %>
-    <article class="card">
-      <%= image_tag(url_for(display_image(art)), class: 'card__image') %>
-      <div class="card__info">
-        <h2 class="cat-name">
-          <%= @category.name%>
-        </h2>
-        <div class="art-title">
-          <%= art.title %>
-        </div>
-        <div>
-          <p class="art-content">
-            <%= truncated_card_content(art.content) %>
-          </p>
-            <%= link_to 'Read more', article_path(art.id), class: 'card__read-more' %>
-        </div>
-      </div>
-    </article>
-  <% end %>
-</div>
+<h1> @category.name </h1>
+<% if !@articles.empty? %>
+<% @articles.each do |art| %>
+<article>
+  <%= image_tag(url_for(@article.avatar))%>
+  <div>
+    <div>
+      <%= art.title %>
+    </div>
+    <div>
+      <p>
+        <%= art.content %>
+      </p>
+    </div>
+  </div>
+</article>
+<% end %>
+<% end %>

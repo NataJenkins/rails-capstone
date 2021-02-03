@@ -5,6 +5,7 @@ class CategoriesController < ApplicationController
 
   def new
     @category = Category.new
+    @articles = Article.all.map{|a| [a.title, a.id]}    
   end
 
   def create
@@ -20,11 +21,16 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
+    @articles = @category.articles
   end
 
   private
 
   def category_params
     params.require(:category).permit(:name, :priority)
+  end
+
+  def article_params
+    params.require(:article).permit(:title, :content, :avatar)
   end
 end

@@ -2,7 +2,18 @@
 <p>Find me in app/views/categories/show.html.erb</p>
 
 
-
+<% @categories.each do |cat| %>
+    <div>
+      <%= link_to category_path(cat) do %>
+        <% if !cat.first_article.nil? %>
+        <%= image_tag(url_for(cat.first_article.avatar))%>
+        <% end %>
+          <h2>
+            <%= cat.name %>
+          </h2>
+      <% end %>
+    </div>
+  <% end %>
 
 
 
