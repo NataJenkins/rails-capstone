@@ -1,18 +1,21 @@
-<h1> @category.name </h1>
-<% if !@articles.empty? %>
-<% @articles.each do |art| %>
-<article>
-  <%= image_tag(url_for(@article.avatar))%>
-  <div>
-    <div>
-      <%= art.title %>
-    </div>
-    <div>
-      <p>
-        <%= art.content %>
-      </p>
-    </div>
-  </div>
-</article>
-<% end %>
-<% end %>
+
+  <% @articles.each do |art| %>
+    <article class="d-flex">
+    <div class="art-image">
+      <%= image_tag(url_for(display_image(art))) %>
+      </div>
+      <div class="card-info">
+        <h2 class="cat-name">
+          <%= @category.name%>
+        </h2>
+        <h3 class="art-title">
+          <%= art.title %>
+        </h3>
+        <div>
+          <p class="art-content">
+            <%= art.content %>
+          </p>
+        </div>
+      </div>
+    </article>
+  <% end %>

@@ -37,3 +37,29 @@
     background-color: rgb(62, 74, 143);
     border: black solid 3px;
 }
+
+.art-image img{
+    height:200px;
+    width:200px;
+    object-fit: fill;
+}
+
+.card-container article{
+    display: flex;
+}
+
+.card-info{
+    width:80%;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.cat-art-image img:first-of-type{
+    height:300px;
+    width:300px;
+    object-fit: fill;
+}
+.d-flex{
+    display: flex;
+    margin-top: 20px;
+}
