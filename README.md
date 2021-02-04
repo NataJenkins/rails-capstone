@@ -1,24 +1,71 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Articles page
 
-Things you may want to cover:
+> This project shows the categories and the articles on each of that categories
 
-* Ruby version
+## :red_circle: Live Demo:
 
-* System dependencies
+[Live Demo Link]()
 
-* Configuration
+## :hammer: Built with
 
-* Database creation
+- Ruby
+- Ruby on Rails
+- Linters
+- VS code
 
-* Database initialization
+## :hammer: Tested with
 
-* How to run the test suite
+- Ruby gem RSpec
+- Ruby gem shoulda Matchers
 
-* Services (job queues, cache servers, search engines, etc.)
+## 📝 Pre-requisites
 
-* Deployment instructions
+- Ruby ruby 2.7.2
+- Ruby on Rails 6.1
+- Postgresql
 
-* ...
+
+## :construction_worker: Getting Started
+
+To get a local copy up and running follow these simple steps:
+
+1. Go to the [repository page](https://github.com/NataJenkins/rails-capstone).
+2. Press the "Code" button and copy the link.
+3. Clone it using git command `git clone <link>`.
+4. Follow 'Setup' steps.
+
+## 📝 Setup
+
+1. Open the terminal.
+2. On the terminal navigate to the project directory using `cd rails-capstone/`.
+3. Install dependencies using: `bundle install`.
+4. Migrate the database: `rails db:create`.
+5. Migrate the database: `rails db:migrate`.
+6. Migrate the database: `rails db:seed`.
+7. If required run: `yarn install`, and repeate step 4.
+8. Start the application : `rails server`.
+9. To Stop the application : Press `Ctrl + c`
+
+## 📝 Run application
+
+1. Open the terminal and go to the directory.
+2. Start the application : `rails server`.
+3. Open the browser and go to : `http://localhost:3000/`
+
+## :bust_in_silhouette: Author
+
+👤 **Natalia Macias**
+
+- GitHub: [NataJenkins](https://github.com/NataJenkins) 
+- Twitter: [@NataJenkins](https://twitter.com/NataJenkins)
+- LinkedIn: [Natalia Macias](https://www.linkedin.com/in/natalia-macias96/ )
+
+## 🤝 :raised_hand: :raised_hand: Contributions
+
+Contributions, issues, and feature requests are welcome!
+
+## :muscle: Show your support
+
+Give a ⭐️ if you like this project!
