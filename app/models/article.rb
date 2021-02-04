@@ -5,4 +5,5 @@ class Article < ApplicationRecord
     has_many :categories, through: :article_categories
 
     has_one_attached :avatar
+    has_many :votes
 end
