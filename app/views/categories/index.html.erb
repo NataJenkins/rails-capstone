@@ -6,7 +6,7 @@
         <h2 class="cat-name">
         <%= cat.name %>
         </h2>  
-          <%= image_tag(url_for(cat.first_article.avatar))%>
+          <%= image_tag(url_for(display_image(cat.first_article)))%>
         </div>
       <% end %>
 

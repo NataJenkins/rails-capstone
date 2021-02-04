@@ -3,7 +3,7 @@
 <%= @article.title %>
 </h1>
 <div>
-<%= image_tag(url_for(@article.avatar))%>
+<%= image_tag(url_for(display_image(@article)))%>
 </div>
 <div>
 <%= @article.content %>
