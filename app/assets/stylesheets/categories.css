@@ -58,7 +58,21 @@
     height:300px;
     width:300px;
     object-fit: fill;
+    position: relative;
+    text-align: center;
+    color: white;
 }
+
+.cat-art-image img:first-of-type{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.cat-name {
+text-align: center;
+}
+
 .d-flex{
     display: flex;
     margin-top: 20px;

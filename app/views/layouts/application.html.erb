@@ -18,7 +18,7 @@
       <%= link_to 'New Category', new_category_path%>
       <%= link_to 'New Article', new_article_path%>
       <div class="dropdown">
-        categories
+      <%= link_to 'Categories', categories_path%>
         <div class="dropdown-content">
           <% cat_drop.each do |c| %>
           <%= link_to "#{c.name}", category_path(c) %>

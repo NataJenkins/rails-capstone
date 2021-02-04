@@ -1,42 +1,15 @@
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
-
-
 <% @categories.each do |cat| %>
-    <div>
-      <%= link_to category_path(cat) do %>
-        <% if !cat.first_article.nil? %>
-        <%= image_tag(url_for(cat.first_article.avatar))%>
-        <% end %>
-          <h2>
-            <%= cat.name %>
-          </h2>
+  <div class="cats-container d-flex">
+    <%= link_to category_path(cat) do %>
+      <% if !cat.first_article.nil? %>
+        <div class="cat-art-image">
+        <h2 class="cat-name">
+        <%= cat.name %>
+        </h2>  
+          <%= image_tag(url_for(cat.first_article.avatar))%>
+        </div>
       <% end %>
-    </div>
-  <% end %>
 
-
-
-
-<!-- <div class="art-container">
-    <div class="top-container">
-        <div class="main-article">
-            main
-        </div>
-        <div class="right-articles">
-            <div class="article">
-                a
-            </div>
-            <div class="article">
-            </div>
-        </div>
-    </div>
-    <div class="bot-container">
-        <div class="article">
-        </div>
-        <div class="article">
-        </div>
-        <div class="article">
-        </div>
-    </div>
-</div>-->
+    <% end %>
+  </div>
+<% end %>
