@@ -4,7 +4,7 @@ RSpec.describe 'Create a new User', type: :feature do
   before do
     @article = User.create(
       name: 'test1',
-      username: 'test1',
+      username: 'test1'
     )
     Category.create(
       name: 'Test Category',

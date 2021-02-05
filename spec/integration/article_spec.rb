@@ -4,7 +4,7 @@ RSpec.describe 'Create a new User', type: :feature do
   before do
     User.create(
       name: 'user3',
-      username: 'user3',
+      username: 'user3'
     )
     Category.create(
       name: 'TestCat',
@@ -13,7 +13,7 @@ RSpec.describe 'Create a new User', type: :feature do
     Article.create(
       author_id: User.first.id,
       title: 'Test Article',
-      content: 'test content',
+      content: 'test content'
     )
     ArticleCategory.create(
       article_id: Article.first.id,
@@ -49,7 +49,7 @@ RSpec.describe 'Create a new User', type: :feature do
     fill_in 'Content', with: ''
     click_on 'Create Article'
 
-    expect(page).to have_content("Article")
+    expect(page).to have_content('Article')
   end
 
   scenario 'title cant be blank' do
@@ -62,7 +62,7 @@ RSpec.describe 'Create a new User', type: :feature do
     fill_in 'Content', with: 'article content'
     click_on 'Create Article'
 
-    expect(page).to have_content("Article")
+    expect(page).to have_content('Article')
   end
 
   scenario 'User not loged in' do

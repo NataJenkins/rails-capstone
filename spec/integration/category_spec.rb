@@ -4,7 +4,7 @@ RSpec.describe 'Create a new User', type: :feature do
   before do
     User.create(
       name: 'user2',
-      username: 'user2',
+      username: 'user2'
     )
     Category.create(
       name: 'TestCat',
@@ -13,7 +13,7 @@ RSpec.describe 'Create a new User', type: :feature do
     Article.create(
       author_id: User.first.id,
       title: 'Test Article',
-      content: 'Test Content',
+      content: 'Test Content'
     )
     ArticleCategory.create(
       article_id: Article.first.id,
@@ -48,7 +48,7 @@ RSpec.describe 'Create a new User', type: :feature do
     fill_in 'Name', with: ''
     click_on 'Create Category'
 
-    expect(page).to have_content("Categories#new")
+    expect(page).to have_content('Categories#new')
   end
 
   scenario 'User not loged in' do

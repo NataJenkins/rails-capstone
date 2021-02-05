@@ -18,12 +18,12 @@ body {
   margin: 0;
 }
 
-.bg{
+.bg {
   background-color: rgb(75, 75, 75);
 }
 
-.main-container{
-  margin: 0px 20px;
+.main-container {
+  margin: 0 20px;
 }
 
 .nav {
