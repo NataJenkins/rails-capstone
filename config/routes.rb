@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   #get 'sign_up', to: 'users#new'
   resources :users, only: [:new, :create]
   resources :articles do 
-    resources :votes, only: [:destroy, :create, :new]
+    resources :votes, only: [:destroy, :create]
   end
   resources :categories
   root 'categories#index'
