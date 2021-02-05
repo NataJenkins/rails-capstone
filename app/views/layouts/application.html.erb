@@ -28,6 +28,7 @@
     </div>
     <div class="nav-sess">
     <% if user_signed_in?%>
+    <%= current_user.name %>
     <%= link_to 'Sign out', log_out_path%>
     <% else %>
       <%= link_to 'Log in', sign_in_path %>
