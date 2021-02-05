@@ -1,79 +1,76 @@
-.art-container{
-    background-color: peru;
-    width:850px;
-    height:600px;
-    margin-left: auto;
-    margin-left: auto;
+.art-container {
+  background-color: peru;
+  width: 850px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.main-article{
-    background-color: rgb(145, 36, 145);
-    width: 525px;
-    height: 425px;
-    overflow: hidden;
+.main-article {
+  background-color: rgb(145, 36, 145);
+  width: 525px;
+  height: 425px;
+  overflow: hidden;
 }
 
-.right-articles .article{
-    background-color: rgb(62, 74, 143);
-    width:100%;
-    height: 212.5px;
+.right-articles .article {
+  background-color: rgb(62, 74, 143);
+  width: 100%;
+  height: 212.5px;
 }
 
-.top-container{
-    display: flex;
+.top-container {
+  display: flex;
 }
 
-.right-articles{
-    width: 325px;
+.right-articles {
+  width: 325px;
 }
 
-.bot-container{
-    display: flex;
-    height: 200px ;
+.bot-container {
+  display: flex;
+  height: 200px;
 }
 
-.bot-container .article{
-    width: 283.333333333px;
-    background-color: rgb(62, 74, 143);
-    border: black solid 3px;
+.bot-container .article {
+  width: 283.333333333px;
+  background-color: rgb(62, 74, 143);
+  border: black solid 3px;
 }
 
-.art-image img{
-    height:200px;
-    width:200px;
-    object-fit: fill;
+.art-image img {
+  height: 200px;
+  width: 200px;
+  object-fit: fill;
 }
 
-.card-container article{
-    display: flex;
+.card-container article {
+  display: flex;
 }
 
-.card-info{
-    width:80%;
-    height: 200px;
-    margin-left: 10px;
+.card-info {
+  width: 80%;
+  height: 200px;
+  margin-left: 10px;
 }
 
-.cat-art-image img:first-of-type{
-    height:300px;
-    width:300px;
-    object-fit: fill;
-    position: relative;
-    text-align: center;
-    color: white;
+.cat-art-image img:first-of-type {
+  height: 300px;
+  width: 300px;
+  object-fit: fill;
 }
 
-.cat-art-image img:first-of-type{
-    position: relative;
-    text-align: center;
-    color: white;
+.cat-art-image {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .cat-name {
-text-align: center;
+  text-align: center;
 }
 
-.d-flex{
-    display: flex;
-    margin-top: 20px;
+.d-flex {
+  display: flex;
+  margin-top: 20px;
 }
