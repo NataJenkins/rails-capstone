@@ -18,6 +18,11 @@ body {
   margin: 0;
 }
 
+a{
+  color:black;
+  text-decoration: none;
+}
+
 .bg {
   background-color: rgb(75, 75, 75);
 }
