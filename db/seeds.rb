@@ -89,7 +89,7 @@ ArticleCategory.create(
 )
 
 ArticleCategory.create(
-  article_id: Article.find_by(title: "Chihuaua").id,
+  article_id: Article.find_by(title: "Chihuahua").id,
   category_id: Category.find_by(name: 'Toy').id
 )
 
