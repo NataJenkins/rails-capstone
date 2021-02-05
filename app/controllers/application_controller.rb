@@ -19,4 +19,8 @@ class ApplicationController < ActionController::Base
   def category_params
     params.require(:category).permit(:name, :priority)
   end
+
+  def authenticate_user
+    redirect_to sign_in_path unless current_user
+  end
 end
