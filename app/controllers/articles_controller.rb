@@ -29,8 +29,8 @@ class ArticlesController < ApplicationController
       flash[:success] = 'Article was successfully deleted.'
     else
       flash[:error] = 'error'
-      redirect_to root_url
     end
+    redirect_to root_url
   end
 
   def show

@@ -31,4 +31,8 @@ class CategoriesController < ApplicationController
     params.require(:category).permit(:name, :priority)
   end
 
+  def article_params
+    params.require(:article).permit(:title, :content, :avatar)
+  end
+
 end

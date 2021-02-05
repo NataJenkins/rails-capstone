@@ -5,7 +5,7 @@ class Article < ApplicationRecord
   has_many :categories, through: :article_categories
 
   has_one_attached :avatar
-  has_many :votes
+  has_many :votes, dependent: :destroy
 
   scope :get_most_votes, -> { joins(:votes).group('articles.id').order('count(votes.id) desc').first }
 end

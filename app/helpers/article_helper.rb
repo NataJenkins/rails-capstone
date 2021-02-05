@@ -2,6 +2,8 @@ module ArticleHelper
   def display_image(image)
     if image.avatar.attached?
       image.avatar
+    elsif image.image
+      image.image.to_s
     else
       'default-image.jpg'
     end
