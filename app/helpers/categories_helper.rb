@@ -1,5 +1,5 @@
 module CategoriesHelper
-    def cat_drop 
-        Category.all
-    end
+  def cat_drop
+    Category.all
+  end
 end

@@ -1,22 +1,22 @@
 class ApplicationController < ActionController::Base
-    helper_method :current_user
-    helper_method :user_signed_in?
-  
-    def current_user
-      User.find_by(id: session[:user_id])
-    end
-  
-    def user_signed_in?
-      !current_user.nil?
-    end
-  
-    def cat_show 
-      @categories = Category.all.map{|c| [c.name, c.id]}
-    end
+  helper_method :current_user
+  helper_method :user_signed_in?
 
-    private
+  def current_user
+    User.find_by(id: session[:user_id])
+  end
 
-    def category_params
-      params.require(:category).permit(:name, :priority)
-    end
+  def user_signed_in?
+    !current_user.nil?
+  end
+
+  def cat_show
+    @categories = Category.all.map { |c| [c.name, c.id] }
+  end
+
+  private
+
+  def category_params
+    params.require(:category).permit(:name, :priority)
+  end
 end

@@ -5,12 +5,12 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
-    @categories = Category.all.map{|c| [c.name, c.id]}
+    @categories = Category.all.map { |c| [c.name, c.id] }
   end
 
   def create
     @article = current_user.articles.new(article_params)
-    @categories = Category.all.map{|c| [c.name, c.id]}
+    @categories = Category.all.map { |c| [c.name, c.id] }
     if @article.save
       @article.categories << Category.find_by(id: params[:categories])
       flash[:success] = 'New article created'
@@ -25,8 +25,8 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     if @article.destroy
       flash[:success] = 'Article was successfully deleted.'
-    else 
-      flash[:error] = "error"
+    else
+      flash[:error] = 'error'
       redirect_to root_url
     end
   end

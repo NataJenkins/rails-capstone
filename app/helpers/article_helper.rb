@@ -30,5 +30,4 @@ module ArticleHelper
       end
     end
   end
-
 end

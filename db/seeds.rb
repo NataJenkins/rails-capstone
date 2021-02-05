@@ -45,40 +45,40 @@ Article.create(
   author_id: User.find_by(name: 'user1').id,
   title: "Labrador Retriever",
   content: "The sweet-faced, lovable Labrador Retriever is America’s most popular dog breed. Labs are friendly, outgoing, and high-spirited companions who have more than enough affection to go around for a family looking for a medium-to-large dog.",
-  cover: 'labrador.ret.jpg'
+  image: 'labrador.ret.jpg'
 )
 
 Article.create(
   author_id: User.find_by(name: 'user1').id,
   title: "Chihuahua",
-  content: "The Chihuahua is a tiny dog with a huge personality. A national symbol of Mexico, these alert and amusing "purse dogs" stand among the oldest breeds of the Americas, with a lineage going back to the ancient kingdoms of pre-Columbian times.",
-  cover: 'Chihuahua.jpg'
+  content: "The Chihuahua is a tiny dog with a huge personality. A national symbol of Mexico, these alert and amusing 'purse dogs' stand among the oldest breeds of the Americas, with a lineage going back to the ancient kingdoms of pre-Columbian times.",
+  image: 'Chihuahua.jpg'
 )
 
 Article.create(
   author_id: User.find_by(name: 'user1').id,
   title: "Canaan",
   content: "One of the AKC's oldest breeds, the Canaan Dog is the national dog of Israel. This quick, medium-sized pasture dog is docile with family, aloof with strangers. The ever-alert Canaan is a vocal and persistent guardian of flock and home.",
-  cover: 'canaan.jpg'
+  image: 'canaan.jpg'
 )
 
 Article.create(
   author_id: User.find_by(name: 'user1').id,
   title: "Greyhound",
   content: "The champion sprinter of dogdom, the Greyhound is a gentle, noble, and sweet-tempered companion with an independent spirit. For thousands of years these graceful hounds have been an object of fascination for artists, poets, and kings.",
-  cover: 'Greyhound.jpg'
+  image: 'Greyhound.jpg'
 )
 Article.create(
   author_id: User.find_by(name: 'user1').id,
   title: "American Staffordshire",
   content: "The American Staffordshire Terrier, known to their fans as AmStaffs, are smart, confident, good-natured companions. Their courage is proverbial. A responsibly bred, well-socialized AmStaff is a loyal, trustworthy friend to the end.",
-  cover: 'American-Staffordshire.jpg'
+  image: 'American-Staffordshire.jpg'
 )
 Article.create(
   author_id: User.find_by(name: 'user1').id,
   title: "German Shepherd",
   content: "Generally considered dogkind’s finest all-purpose worker, the German Shepherd Dog is a large, agile, muscular dog of noble character and high intelligence. Loyal, confident, courageous, and steady, the German Shepherd is truly a dog lover’s delight.",
-  cover: 'GermanShep.jpg'
+  image: 'GermanShep.jpg'
 )
 
 # Bridge table

@@ -5,7 +5,7 @@ class CategoriesController < ApplicationController
 
   def new
     @category = Category.new
-    @articles = Article.all.map{|a| [a.title, a.id]}    
+    @articles = Article.all.map { |a| [a.title, a.id] }
   end
 
   def create
