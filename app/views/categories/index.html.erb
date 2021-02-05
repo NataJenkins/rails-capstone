@@ -1,3 +1,6 @@
+<main>
+
+<%= render 'first' %>
 <% @categories.each do |cat| %>
   <div class="cats-container d-flex">
     <%= link_to category_path(cat) do %>
@@ -13,3 +16,5 @@
     <% end %>
   </div>
 <% end %>
+
+</main>

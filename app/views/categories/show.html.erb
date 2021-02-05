@@ -13,11 +13,13 @@
         </h3>
         <div>
           <p class="art-content">
-            <%= art.content %>
+            <%= truncated_text(art.content) %>
           </p>
-          <%= display_vote(art) %>
-          <%= current_user.name %>
+          <%= link_to 'Read more', article_path(art.id), class: 'card__read-more' %>
+
         </div>
+        <%= display_vote(art) %>
+        <%= current_user.name %>
       </div>
     </article>
   <% end %>

@@ -1,6 +1,7 @@
 class CategoriesController < ApplicationController
   def index
     @categories = Category.all
+    @voted_article = Article.includes([:avatar_attachment]).get_most_votes
   end
 
   def new

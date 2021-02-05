@@ -6,4 +6,6 @@ class Article < ApplicationRecord
 
   has_one_attached :avatar
   has_many :votes
+
+  scope :get_most_votes, -> { joins(:votes).group('articles.id').order('count(votes.id) desc').first }
 end
