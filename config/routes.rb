@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   resources :articles do 
     resources :votes, only: [:destroy, :create]
   end
-  resources :categories
+  resources :categories, only: [:new, :create, :destroy, :show, :index]
   root 'categories#index'
 end
