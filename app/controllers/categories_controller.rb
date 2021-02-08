@@ -25,6 +25,16 @@ class CategoriesController < ApplicationController
     @articles = @category.articles
   end
 
+  def destroy
+    @category = Category.find(params[:id])
+    if @category.destroy
+      flash[:success] = 'Category was successfully deleted.'
+    else
+      flash[:error] = 'error'
+    end
+    redirect_to root_url
+  end
+
   private
 
   def category_params
