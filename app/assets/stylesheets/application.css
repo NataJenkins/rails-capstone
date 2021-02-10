@@ -29,6 +29,7 @@ a {
 
 .main-container {
   margin: 0 20px;
+  overflow: hidden;
 }
 
 .nav {

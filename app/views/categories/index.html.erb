@@ -1,9 +1,11 @@
 <div class="bg">
 <main class="main-container">
 
+<div class="index-banner">
 <%= render 'first' %>
+</div>
 <% @categories.each do |cat| %>
-  <div class="cats-container d-flex">
+  <div class="cats-container">
     <%= link_to category_path(cat) do %>
       <% if !cat.first_article.nil? %>
         <div class="cat-art-image">
