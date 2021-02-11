@@ -4,6 +4,7 @@
 <div class="index-banner">
 <%= render 'first' %>
 </div>
+<section class="category-container">
 <% @categories.each do |cat| %>
   <div class="cats-container">
     <%= link_to category_path(cat) do %>
@@ -19,6 +20,7 @@
     <% end %>
   </div>
 <% end %>
+</section>
 
 </main>
 </div>

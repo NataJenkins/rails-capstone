@@ -84,3 +84,12 @@
   margin-right: auto;
   margin-top: 20px;
 }
+
+.banner {
+  position: relative;
+}
+
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
