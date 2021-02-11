@@ -54,6 +54,12 @@ To get a local copy up and running follow these simple steps:
 2. Start the application : `rails server`.
 3. Open the browser and go to : `http://localhost:3000/`
 
+# 📝 Testing
+-Open the console
+-cd to the Tic-Tac-Toe project
+-Run bundle install
+-Run rspec
+
 ## :bust_in_silhouette: Author
 
 👤 **Natalia Macias**
