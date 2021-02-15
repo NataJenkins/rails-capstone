@@ -10,10 +10,10 @@
     <%= link_to category_path(cat) do %>
       <% if !cat.first_article.nil? %>
         <div class="cat-art-image">
-        <h2 class="cat-name">
-        <%= cat.name %>
-        </h2>  
           <%= image_tag(url_for(display_image(cat.first_article)))%>
+          <h2 class="cat-name">
+          <%= cat.name %>
+          </h2>  
         </div>
       <% end %>
 

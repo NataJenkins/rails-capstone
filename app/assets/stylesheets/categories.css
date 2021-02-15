@@ -41,7 +41,6 @@
 .art-image img {
   height: 200px;
   width: 200px;
-  object-fit: fill;
 }
 
 .card-container article {
@@ -58,19 +57,26 @@
   width: 100%;
 }
 
-.cat-art-image img:first-of-type {
-  height: 300px;
-  width: 300px;
-  object-fit: fill;
-}
-
 .cat-art-image {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
   position: relative;
   text-align: center;
 }
 
+.cat-art-image img {
+  height: 100%;
+  width: 100%;
+}
+
 .cat-name {
   text-align: center;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  margin-left: 20px;
+  -webkit-text-stroke: 1px white;
 }
 
 .d-flex {
