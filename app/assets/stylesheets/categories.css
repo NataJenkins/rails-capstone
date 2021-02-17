@@ -85,9 +85,7 @@
 }
 
 .index-banner {
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   margin-top: 20px;
 }
 
@@ -98,4 +96,10 @@
 .category-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.banner-txt {
+  position: absolute;
+  z-index: 5;
+  bottom: 1px;
 }
