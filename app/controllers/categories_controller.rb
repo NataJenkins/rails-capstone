@@ -1,4 +1,6 @@
 class CategoriesController < ApplicationController
+  before_action :authenticate_user
+
   def index
     @categories = Category.all
     @voted_article = Article.includes([:avatar_attachment]).get_most_votes
