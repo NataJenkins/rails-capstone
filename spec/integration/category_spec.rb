@@ -39,18 +39,6 @@ RSpec.describe 'Create a new User', type: :feature do
     expect(page).to have_content('Test')
   end
 
-  scenario 'invalid title' do
-    visit sign_in_path
-    fill_in 'Username', with: 'user1'
-    click_on 'log in'
-    visit categories_path
-    click_on 'New Category'
-    fill_in 'Name', with: ''
-    click_on 'Create Category'
-
-    expect(page).to have_content('Categories#new')
-  end
-
   scenario 'User not loged in' do
     visit categories_path
     click_on 'New Category'
