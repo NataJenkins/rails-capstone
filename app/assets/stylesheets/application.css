@@ -24,10 +24,11 @@ a {
   text-decoration: none;
 }
 
-.bg{
+.bg {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 
 .main-container {
@@ -39,7 +40,7 @@ a {
   width: 100%;
   border-bottom: rgb(105, 103, 103) solid 1px;
   display: flex;
-  background-color: rgb(206, 206, 206);
+  background-color: white;
 }
 
 .nav-cat {
@@ -88,7 +89,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 75px;
-  background-color: rgb(206, 206, 206);
+  background-color:white;
   display: flex;
 }
 
