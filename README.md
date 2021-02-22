@@ -4,7 +4,7 @@
 
 > This project shows the categories and the articles on each of that categories
 
-![screenshot](assets\images\preview.png)
+![screenshot](app\assets\images\preview.png)
 ## :red_circle: Live Demo:
 
 [Live Demo Link](https://rails-capstone-nat.herokuapp.com/)
