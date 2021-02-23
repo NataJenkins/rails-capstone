@@ -44,7 +44,7 @@ To get a local copy up and running follow these simple steps:
 3. Install dependencies using: `bundle install`.
 4. Migrate the database: `rails db:create`.
 5. Migrate the database: `rails db:migrate`.
-6. Migrate the database: `rails db:seed`.
+6. ##### Migrate the database: `rails db:seed`.
 7. If required run: `yarn install`, and repeate step 4.
 8. Start the application : `rails server`.
 9. To Stop the application : Press `Ctrl + c`
