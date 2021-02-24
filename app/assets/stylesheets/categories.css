@@ -63,9 +63,11 @@
   object-fit: fill;
   position: relative;
   text-align: center;
+  
 }
 
 .cat-art-image img {
+  content:'';
   height: 100%;
   width: 100%;
 }
@@ -76,7 +78,7 @@
   z-index: 2;
   top: 0;
   margin-left: 20px;
-  -webkit-text-stroke: 1px white;
+  color:white
 }
 
 .d-flex {
