@@ -85,12 +85,14 @@ a {
 }
 
 footer {
-  /* position: absolute; */
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 75px;
   background-color: white;
   display: flex;
+  border-top: 1px solid black;
+  z-index: 20;
 }
 
 footer div {
