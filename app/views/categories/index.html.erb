@@ -1,0 +1,26 @@
+<div class="bg">
+<main class="main-container">
+
+<div class="index-banner">
+<%= render 'first' %>
+</div>
+<section class="category-container">
+<% @categories.each do |cat| %>
+  <div class="cats-container">
+    <%= link_to category_path(cat) do %>
+      <% if !cat.first_article.nil? %>
+        <div class="cat-art-image">
+          <%= image_tag(url_for(display_image(cat.first_article)))%>
+          <h2 class="cat-name">
+          <%= cat.name %>
+          </h2>  
+        </div>
+      <% end %>
+
+    <% end %>
+  </div>
+<% end %>
+</section>
+
+</main>
+</div>

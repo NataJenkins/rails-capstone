@@ -1,0 +1,26 @@
+<div class="main-container">
+  <% @articles.each do |art| %>
+    <article class="d-flex">
+    <div class="art-image">
+      <%= image_tag(url_for(display_image(art))) %>
+      </div>
+      <div class="card-info">
+        <h2 class="cat-name">
+          <%= @category.name%>
+        </h2>
+        <h3 class="art-title">
+          <%= art.title %>
+        </h3>
+        <div>
+          <p class="art-content">
+            <%= truncated_text(art.content) %>
+          </p>
+          <%= link_to 'Read more', article_path(art.id), class: 'card__read-more' %>
+
+        </div>
+        <%= display_vote(art) %>
+        <%= current_user.name %>
+      </div>
+    </article>
+  <% end %>
+  </div>

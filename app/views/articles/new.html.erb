@@ -1,0 +1,22 @@
+<div class="bg">
+<h1>Article</h1>
+  <%= form_with model: @article, class: 'form' do |f| %>
+    <div>
+      <%= f.label :title, class: "label | text-is-white" %>
+      <%= f.text_field :title, class: "input" %>
+    </div>
+    <div>
+      <%= f.label :content, class: "label | text-is-white" %>
+      <%= f.text_area :content, class: "input" %>
+    </div>
+  <div>
+    <%= f.label :category%>
+    <%= select_tag :categories, options_for_select(@categories), class: 'input' %>
+  </div>
+  <div>
+  <%= f.label :avatar %>
+  <%= f.file_field :avatar, class: "input" %>
+  </div>
+  <%= f.submit %>
+  <% end %>
+</div>

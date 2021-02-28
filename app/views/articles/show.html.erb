@@ -1,0 +1,14 @@
+<div class="bg">
+<article class="main-container">
+<h1>
+<%= @article.title %>
+</h1>
+<div>
+<%= image_tag(url_for(display_image(@article)))%>
+</div>
+<div>
+<%= @article.content %>
+</div>
+<%= link_to 'destroy', article_path(@article.id), method: :delete %>
+</article>
+</div>

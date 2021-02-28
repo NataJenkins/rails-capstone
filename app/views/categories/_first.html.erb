@@ -1,0 +1,14 @@
+ 
+<div class="banner">
+  <%= link_to article_path(@voted_article) do %>
+  <%= image_tag(url_for(display_image(@voted_article))) %>
+  <div class="banner-txt">
+    <h1>
+      <%= @voted_article.title %>
+    </h1>
+    <p>
+      <%= truncated_text(@voted_article.content) %>
+    </p>
+  </div>
+  <% end %>
+</div>

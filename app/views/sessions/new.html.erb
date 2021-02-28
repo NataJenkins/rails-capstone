@@ -1,0 +1,14 @@
+<div class="bg">
+<div class="container">
+  <%= form_tag sign_in_path, class: 'form' do |f| %>
+    <div>
+      <%= label_tag :username, nil, class: "label" %>
+      <%= text_field_tag :username, nil, class: "input" %>
+    </div>
+    <div class="btn">
+    <%= submit_tag 'log in' %>
+    </div>
+  <% end %>
+</div>
+
+</div>
